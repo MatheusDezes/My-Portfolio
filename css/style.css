@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
 }
 
@@ -39,14 +40,14 @@ body::-webkit-scrollbar-thumb {
 
 /*<=======Main=======>*/
 
-@media screen and (max-width: 600px){
-    main {
-        margin-left: 0;
-    }
-}
 @media screen and (max-width: 1500px){
     main {
         margin-left: 5rem;
+    }
+}
+@media screen and (max-width: 600px){
+    main {
+        margin-left: 0;
     }
 }
 /*<=======Main=======>*/
@@ -282,6 +283,11 @@ header {
     justify-content: space-around;
 }
 
+.logo-header h1 {
+    color: var(--color-black);
+    font-weight: 600;
+    font-size: clamp(0.875rem, 2vw, 1.375rem);
+}
 
 .contatos {
     text-align: center;
@@ -876,7 +882,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+   
 }
+
 
 .card-about {
     margin-left: 7%;
@@ -897,7 +906,7 @@ header {
 
 .container-card-about {
     width: 29.938rem;
-    height: 24.5rem;
+    height: 20.188rem;
     padding: 1.25rem;
     border-radius: 1.25rem;
     border: 1px solid var(--color-black);
@@ -905,14 +914,14 @@ header {
     background-color: var(--color-branco);
 }
 
-.container-card-about h1 {
+.name-about {
     font-size: clamp(1rem , 3vw, 1.25rem);
     font-weight: 700;
     color: var(--color-black);
     margin-bottom: 7px;
 }
 
-.container-card-about h1::after {
+.name-about::after {
     content: '';
     width: 100%;
     height: 0.063rem;
@@ -933,20 +942,144 @@ header {
     margin-bottom: 5px;
 }
 
-.profile-element {
-    width: 10.938rem;
-    height: 6.875rem;
-    position: absolute;
-    animation: about-animation 3s linear infinite;
+.profile-about {
+    width: 461px;
+    height: auto;
+    position: relative;
 }
 
 .profile-corpo {
-    width: 461px;
-    height: 527px;
+    width: 100%;
+    height: 100%;
+}
+
+.profile-element {
+    position: absolute;
+    width: 10.938rem;
+    height: 6.875rem;
+    left: -50px;
+    top: 20px;
+    z-index: 1;
+    animation: about-animation 4s linear infinite;
+}
+.card-download {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5%;
+}
+
+.card-download-cv {
+    width: 21.875rem;
+    height: 4.25rem;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    border: 1px solid var(--color-black);
+    background-color: var(--color-branco);
+}
+
+.card-download-icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 1px solid var(--color-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4%;
+    background-color: var(--color-vermelho-claro);
+}
+
+.btn-download {
+    width: 5.313rem;
+    height: 1.563rem;
+    border-radius: 1.125rem;
+    border: 1px solid var(--color-black);
+    background-color: var(--color-amarelo);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    margin-left: 5%;
+}
+
+.btn-download a {
+    font-size: clamp(0.75rem , 2vw, 0.875rem);
+    text-decoration: none;
+    color: var(--color-black);
+    font-weight: 600;
+}
+
+.btn-download:hover {
+    background-color: var(--color-vermelho);
+}
+
+.card-download-icon i {
+    font-size: 1.438rem;
+    color: var(--color-black);
+}
+
+.text-card-cv h1 {
+    font-size: clamp(0.813rem , 2vw, 1rem);
+    color: var(--color-black);
+    font-weight: 700;
+}
+
+.text-card-cv p {
+    font-size: clamp(0.625rem , 2vw, 0.838rem);
+    color: var(--color-black);
+    font-weight: 400;   
+}
+
+.contatos-about {
+    width: 100%;
+    height: 90%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    background-color: var(--color-amarelo);
+    border: 1px solid var(--color-black);
+    border-bottom: 5px solid var(--color-black);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.contatos-about-icon i{
+    font-size: 1.25rem;
+    color: var(--color-black);
+}
+
+.contatos-about:hover{
+    background-color: var(--color-vermelho-claro);
+}
+/**/
+.shape1-about img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.shape2-about img {
+    position: absolute;
+    left: 5rem;
+    bottom: -70%;
+    z-index: -1;
+}
+
+
+
+/*Medium Screen*/
+@media screen and (max-width: 1220px) {
+    
 }
 
 @keyframes about-animation {
-
+    
     0%{
         transform: translateY(0);
     }

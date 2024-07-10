@@ -11,4 +11,3 @@ this.classList.add('ativo')
 navLink.forEach((item)=>
     item.addEventListener('click', selectlink)
 )
-
