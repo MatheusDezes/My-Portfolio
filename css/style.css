@@ -798,7 +798,7 @@ header {
     }
 }
 
-/* Small Screens*/
+/* Medium Screens*/
 @media screen and (max-width: 840px) {
     .container-services {
         flex-direction: column;
@@ -808,11 +808,49 @@ header {
     .card-service {
       margin: 3%;
     }
- 
+    
 }
 
 /* Small Screens*/
 @media screen and (max-width: 600px) {
+    .container-services {
+        height: 24.375rem;
+    }
+
+    .card-service {
+        width: 8.5rem;
+        height: 5.938rem;
+        border-radius: 0.938rem;
+    }
+
+    .card-service i {
+        font-size: 1.938rem;
+        color: var(--color-vermelho-claro);
+        margin-top: 6%;
+        margin-left: 32%;
+        transition: 0.3s;
+    }
+    
+    .card-service:hover i{
+        font-size: 2.25rem;
+        color: var(--color-black);
+        margin-top: 6%;
+        margin-left: 30%;
+    }
+
+    .card-service h4 {
+        font-size:0.625rem ;
+        transform: translateY(5px);
+    }
+    
+    .card-service:hover h4 {
+        font-size:0.625rem ;
+        text-align: center;
+    }
+    
+    .card-service p {
+        display: none;
+    }
   
  
 }
@@ -1026,9 +1064,14 @@ header {
         height: 71rem; 
     }
 
-    .card-about {
-        margin-top: 3%;
+    .profile-about {
+        margin-bottom: 6%;
     }
+
+    .card-about {
+        margin-left: 0;
+    }
+
 
     .shape2-about img {
         bottom: -60%;
@@ -1040,7 +1083,7 @@ header {
 @media screen and (max-width: 720px) {
     .container-about {
         flex-direction: column;
-        height: 58.563rem; 
+        height: 50rem; 
     }
 
     .title-about {
@@ -1060,17 +1103,18 @@ header {
         padding: 0.813rem;
         border-radius: 1.25rem;
     }
+
     
     .profile-about {
-        width: 311px;
+        width: 300px;
         height: auto;
         position: relative;
     }
-
+    
     .profile-element {
         width: 5.75rem;
         height: 3.625rem;
-        left: -20px;
+        left: -12px;
         top: 40px;
     }
 
@@ -1086,8 +1130,8 @@ header {
     }
 
     .card-download-cv {
-        width: 14.375rem;
-        height: 3.125rem;
+        width: 15rem;
+        height: 2.813rem;
         border-radius: 0.938rem;
         padding: 0.25rem;
     }
@@ -1107,7 +1151,7 @@ header {
     }
 
     .btn-download {
-        width: 4.688rem;
+        width: 4.375rem;
         height: 1.313rem;
     }
 
