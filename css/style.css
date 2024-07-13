@@ -1453,6 +1453,7 @@ header {
     justify-content: center;
     font-size: 0.875rem;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .change-experience:nth-child(1),
@@ -1460,7 +1461,7 @@ header {
     border-bottom: 1px solid;
 }
 
-.change-experience:hover {
+.change-experience:hover.activeExperience{
     background-color: #D62D00;
 }
 
