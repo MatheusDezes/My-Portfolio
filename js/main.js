@@ -7,7 +7,7 @@ var ResumeExperience = document.querySelector(".resume-experience");
     document.getElementById("card1").addEventListener('click', () => {
         NameCompany.textContent = "Freelancer";
         CargoExperience.textContent = "Desenvolvedor Web";
-        DateExperience.textContent = "Abr 2024 - Aos dias atuais";
+        DateExperience.textContent = "Abr 2024 - Atual";
         ResumeExperience.textContent = "Trabalhando de forma autonoma, lidando diretamente com cliente do começo ao final do projeto.";
     });
 

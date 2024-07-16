@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <!--========Frameworks===========-->
     
 </head>
@@ -80,7 +84,7 @@
     <!---------NavBar-Lateral--------->
 
     <!---------Header--------->
-<header>
+<header class="header">
     <div class="container-header">
         <div class="logo-header">
                 <h1><b><</b><b>/></b></h1>
@@ -99,7 +103,7 @@
     <!---------Main--------->
 <main>
     <!---------Inicial--------->
-    <section class="inicial">
+    <header class="inicial">
         <div class="inicial-container">
             <div class="designer-body">
                 <img src="images/Cartoon_body.webp" alt="image">
@@ -142,7 +146,7 @@
         </div >
     <!--Background - animado - inicial-->
     </div><!--incial-container-->
-    </section>
+</header>
     <!---------Inicial--------->
 
     <!---------Services--------->
@@ -315,7 +319,7 @@
             <div class="container-info">
                 <div class="info-experience">
                     <h3 class="cargo-experience">Desenvolvedor Web</h3>
-                    <p class="date-experience">Abr 2024 - Aos dias atuais</p>
+                    <p class="date-experience">Abr 2024 - Atual</p>
                 </div><!--info-experience-->
                 <div class="info-resume">
                     <p class="resume-experience">
@@ -326,13 +330,62 @@
          </article><!--company-->
          
         </div><!--contianer-experience-->
+
+        <div class="section"></div>
     </section><!--experience-->
       <!---------Eperiências/--------->
+      <!---------Portifolio--------->
 
+    <section class="projects">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide card-project">
+            <article class="title-project">
+                <h3>Grape<br>Store</h3>
+            </article>
+            <aside class="buttons-project">
+                <a href="" class="deploy"><i class="fa-solid fa-door-open"></i>Deploy</a>
+                <a href="" class="repository"><i class="fa-solid fa-server"></i>Repositorio</a>
+            </aside>
+          </div><!--card-project-->
+
+          <div class="swiper-slide card-project">
+            <article class="title-project">
+                <h3>Sierra<br>imobili.</h3>
+            </article>
+            <aside class="buttons-project">
+                <a href="" class="deploy"><i class="fa-solid fa-door-open"></i>Deploy</a>
+                <a href="" class="repository"><i class="fa-solid fa-server"></i>Repositorio</a>
+            </aside>
+          </div><!--card-project-->
+
+          <div class="swiper-slide card-project">
+            <article class="title-project">
+                <h3>Portifolio<br>Pessoal</h3>
+            </article>
+            <aside class="buttons-project">
+                <a href="" class="deploy"><i class="fa-solid fa-door-open"></i>Deploy</a>
+                <a href="" class="repository"><i class="fa-solid fa-server"></i>Repositorio</a>
+            </aside><!--card-project-->
+          </div>
+   
+          <div class="swiper-slide card-construction">Slide 4</div>
+          <div class="swiper-slide card-construction">Slide 4</div>
+          <div class="swiper-slide card-construction">Slide 4</div>
+          
+        
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!---------Portifolio/--------->
+    
 </main>
- <!---------Main---------> 
- 
- <!---------JavaScript--------->
+<!---------Main---------> 
+
+<!---------JavaScript--------->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/js/swiper.js"></script>
  <script src="/js/navbar.js"></script>
  <script src="/js/main.js"></script>
  
